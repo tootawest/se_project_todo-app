@@ -26,15 +26,31 @@ class Todo {
     this._todoElement = this._templateElement.content
       .querySelector(".todo")
       .cloneNode(true);
+
     const todoNameEl = this._todoElement.querySelector(".todo__name");
     const todoDate = this._todoElement.querySelector(".todo__date");
-    const todoDeleteBtn = this._todoElement.querySelector(".todo__delete-btn");
+    this._todoDeleteBtn = this._todoElement.querySelector(".todo__delete-btn");
 
     todoNameEl.textContent = this._data.name;
 
+    if (this._data.date) {
+      const dueDate = new Date(this._data.date);
+      if (!isNaN(dueDate)) {
+        todoDate.textContent = `Due: ${dueDate.toLocaleString("en-US", {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+        })}`;
+      } else {
+        todoDate.textContent = "Invalid date";
+      }
+    } else {
+      todoDate.textContent = "No due date set";
+    }
+
     this._generateCheckboxEl();
     this._setEventListeners();
-    return todoElement;
+    return this._todoElement;
   }
 }
 
