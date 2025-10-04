@@ -24,4 +24,6 @@ This project was made to practice JavaScript basics such as **DOM manipulation, 
 
 ### Deployment
 
-git clone https://github.com/tootawest/se_project_todo-app.git
+This webpage is deployed to GitHub Pages
+
+- https://tootawest.github.io/se_project_todo-app/
