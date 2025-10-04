@@ -1,17 +1,27 @@
-# Simple Todo App
+# 📝 To-Do App
 
-Give a brief description of the project here. Feel free to give it a different name.
+A simple and interactive To-Do List application built with **HTML, CSS, and JavaScript**.  
+This project was made to practice JavaScript basics such as **DOM manipulation, event handling, and form validation**.
 
-## Functionality
+---
 
-Give a more detailed explanation of the project and its functionality.
+## ✨ Features
 
-## Technology
+- ➕ Add new tasks with optional due dates
+- ✅ Mark tasks as completed
+- 🗑️ Delete tasks from the list
+- 🔒 Input validation to keep the form clean
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+---
 
-## Deployment
+## 🛠️ Technologies Used
 
-This project is deployed on GitHub Pages:
+- **HTML5** – Page structure
+- **CSS3** – Styling and layout
+- **JavaScript (ES6+)** – Logic and interactivity
 
-- ADD LINK HERE
+---
+
+### Deployment
+
+git clone https://github.com/tootawest/se_project_todo-app.git
