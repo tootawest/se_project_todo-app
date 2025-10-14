@@ -42,10 +42,10 @@ class Todo {
           day: "numeric",
         })}`;
       } else {
-        todoDate.textContent = "Invalid date";
+        todoDate.textContent = "";
       }
     } else {
-      todoDate.textContent = "No due date set";
+      todoDate.textContent = "";
     }
 
     this._generateCheckboxEl();
